@@ -16,11 +16,14 @@
 <body class="childrenBody">
 <blockquote class="layui-elem-quote news_search">
     <div class="layui-inline">
-        <div class="layui-input-inline">
-            <input type="text" value="" placeholder="请输入关键字" class="layui-input search_input">
-        </div>
-        <a class="layui-btn search_btn">查询</a>
+        <form action="{:url('Index/index')}" method="post">
+            <div class="layui-input-inline">
+                <input type="text" value="" name="key_word" placeholder="请输入关键字" class="layui-input search_input">
+            </div>
+            <input class="layui-btn search_btn" type="submit" value="查询" >
+        </form>
     </div>
+
     <div class="layui-inline">
         <a class="layui-btn layui-btn-normal newsAdd_btn" href="{:url('add_class')}" >添加分类</a>
     </div>

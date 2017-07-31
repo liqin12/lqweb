@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\php\lqweb\application\admin/template/admin\index\index.html";i:1500868391;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:62:"D:\php\lqweb\application\admin/template/admin\index\index.html";i:1501483394;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,6 +113,24 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">
                         <i class="layui-icon" data-icon=""></i>
+                        <cite>商品管理</cite><span class="layui-nav-more"></span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;" data-url="<?php echo url('admin/Goods/index'); ?>">
+                                <i class="layui-icon" data-icon=""></i><cite>商品列表</cite>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" data-url="<?php echo url('admin/Goods/add_goods'); ?>">
+                                <i class="layui-icon" data-icon=""></i><cite>添加商品</cite>
+                            </a>
+                        </dd>
+                    </dl>
+                </li><span class="layui-nav-bar" style="top: 112.5px; height: 0px; opacity: 0;"></span>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon" data-icon=""></i>
                         <cite>分类管理</cite><span class="layui-nav-more"></span>
                     </a>
                     <dl class="layui-nav-child">
@@ -129,35 +147,29 @@
                     </dl>
                 </li><span class="layui-nav-bar" style="top: 112.5px; height: 0px; opacity: 0;"></span>
                 <li class="layui-nav-item">
-                    <a href="javascript:;" data-url="<?php echo url('admin/Category/index'); ?>">
-                        <i class="iconfont icon-text" data-icon="icon-text"></i><cite>类别管理</cite>
+                    <a href="javascript:;">
+                        <i class="layui-icon" data-icon=""></i>
+                        <cite>属性管理</cite><span class="layui-nav-more"></span>
                     </a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;" data-url="page/links/linksList.html">
-                        <i class="iconfont icon-text" data-icon="icon-text"></i><cite>友情链接</cite>
-                    </a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;" data-url="page/404.html">
-                        <i class="layui-icon" data-icon=""></i><cite>404页面</cite>
-                    </a>
-                </li>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;" data-url="<?php echo url('admin/Property/index'); ?>">
+                                <i class="layui-icon" data-icon=""></i><cite>属性类列表</cite>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" data-url="<?php echo url('admin/Property/add_pro'); ?>">
+                                <i class="layui-icon" data-icon=""></i><cite>添加属性类</cite>
+                            </a>
+                        </dd>
+                    </dl>
+                </li><span class="layui-nav-bar" style="top: 112.5px; height: 0px; opacity: 0;"></span>
                 <li class="layui-nav-item">
                     <a href="javascript:;" data-url="page/systemParameter/systemParameter.html">
                         <i class="layui-icon" data-icon=""></i><cite>系统基本参数</cite>
                     </a>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">
-                        <i class="layui-icon" data-icon=""></i>
-                        <cite>二级菜单演示</cite><span class="layui-nav-more"></span>
-                    </a>
-                    <dl class="layui-nav-child"><dd><a href="javascript:;" data-url="">
-                        <i class="layui-icon" data-icon=""></i><cite>二级菜单1</cite></a></dd><dd><a href="javascript:;" data-url="">
-                        <i class="layui-icon" data-icon=""></i><cite>二级菜单2</cite></a></dd>
-                    </dl>
-                </li><span class="layui-nav-bar" style="top: 112.5px; height: 0px; opacity: 0;"></span>
+
             </ul>
         </div>
     </div>

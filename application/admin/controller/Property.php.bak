@@ -1,0 +1,31 @@
+<?php
+namespace app\admin\controller;
+
+use think\Controller;
+use app\admin\model\Lq_proprety;
+
+class Property extends  Controller
+{
+    private $model;
+
+
+    public function __construct()
+    {
+        //$this->model=new Lq_proprety();
+    }
+
+    public function index()
+    {
+        return $this->fetch();
+    }
+
+    /**
+     * 添加属性
+     */
+    public function add_pro()
+    {
+        return $this->fetch();
+    }
+
+}
+

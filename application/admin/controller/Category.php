@@ -12,6 +12,11 @@ class Category extends Controller
 {
     public function index()
     {
+        $post=Request::instance()->post();
+        if ($post){
+            $keyword=$post['key_word'];
+            
+        }
         $list=db('category')->where('level',1)->order('id desc')->select();
         foreach ($list as $k=>$v)
         {

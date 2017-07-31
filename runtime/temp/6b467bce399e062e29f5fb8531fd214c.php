@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\php\lqweb\application\admin/template/admin\category\index.html";i:1500974084;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\php\lqweb\application\admin/template/admin\category\index.html";i:1501294663;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,11 +17,14 @@
 <body class="childrenBody">
 <blockquote class="layui-elem-quote news_search">
     <div class="layui-inline">
-        <div class="layui-input-inline">
-            <input type="text" value="" placeholder="请输入关键字" class="layui-input search_input">
-        </div>
-        <a class="layui-btn search_btn">查询</a>
+        <form action="<?php echo url('Index/index'); ?>" method="post">
+            <div class="layui-input-inline">
+                <input type="text" value="" name="key_word" placeholder="请输入关键字" class="layui-input search_input">
+            </div>
+            <input class="layui-btn search_btn" type="submit" value="查询" >
+        </form>
     </div>
+
     <div class="layui-inline">
         <a class="layui-btn layui-btn-normal newsAdd_btn" href="<?php echo url('add_class'); ?>" >添加分类</a>
     </div>
